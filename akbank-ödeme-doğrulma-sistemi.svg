@@ -1,0 +1,55 @@
+<svg width="880" height="260" viewBox="0 0 880 260" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .box { fill: none; stroke: #d4002a; stroke-width: 3; }
+    .title { fill: #d4002a; font-size: 26px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+    .label { fill: #000; font-size: 16px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+    .value { fill: #000; font-size: 16px; font-family: Arial, Helvetica, sans-serif; }
+    .status { fill: #d4002a; font-size: 20px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+    .check { fill: none; stroke: #d4002a; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+    .footer { fill: #333; font-size: 13px; font-family: Arial, Helvetica, sans-serif; }
+  </style>
+
+  <!-- Border -->
+  <rect x="10" y="10" rx="12" ry="12" width="860" height="240" class="box"/>
+
+  <!-- Title -->
+  <text x="30" y="45" class="title">AKBANK – ÖDEME TEYİDİ</text>
+
+  <!-- Status -->
+  <path d="M620 40 L640 60 L680 25" class="check"/>
+  <text x="700" y="50" class="status">TAHSİL EDİLDİ</text>
+
+  <!-- Row 1 -->
+  <text x="30" y="95" class="label">Alıcı Kurum</text>
+  <text x="200" y="95" class="value">T.C. HAZİNE VE MALİYE BAKANLIĞI</text>
+
+  <!-- Row 2 -->
+  <text x="30" y="125" class="label">Vergi Dairesi</text>
+  <text x="200" y="125" class="value">İnegöl Vergi Dairesi Müdürlüğü</text>
+
+  <!-- Row 3 -->
+  <text x="30" y="155" class="label">Ödeme Türü</text>
+  <text x="200" y="155" class="value">İdari Para Cezası (7258 / 5-D)</text>
+
+  <!-- Row 4 -->
+  <text x="30" y="185" class="label">Borçlu (TCKN)</text>
+  <text x="200" y="185" class="value">10726922920</text>
+
+  <!-- Right column -->
+  <text x="520" y="95" class="label">Tutar</text>
+  <text x="650" y="95" class="value">320.000,00 TL</text>
+
+  <text x="520" y="125" class="label">İşlem Tarihi</text>
+  <text x="650" y="125" class="value">11.09.2025</text>
+
+  <text x="520" y="155" class="label">Kanal</text>
+  <text x="650" y="155" class="value">Akbank Direkt Mobil</text>
+
+  <text x="520" y="185" class="label">Durum</text>
+  <text x="650" y="185" class="value">Ödeme Başarıyla Gerçekleşti</text>
+
+  <!-- Footer -->
+  <text x="440" y="225" text-anchor="middle" class="footer">
+    Bu bilgilendirme, Akbank sistem kayıtlarına dayanarak oluşturulmuştur.
+  </text>
+</svg>
