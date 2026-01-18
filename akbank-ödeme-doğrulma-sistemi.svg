@@ -1,55 +1,64 @@
-<svg width="880" height="260" viewBox="0 0 880 260" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+
   <style>
-    .box { fill: none; stroke: #d4002a; stroke-width: 3; }
-    .title { fill: #d4002a; font-size: 26px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
-    .label { fill: #000; font-size: 16px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
-    .value { fill: #000; font-size: 16px; font-family: Arial, Helvetica, sans-serif; }
-    .status { fill: #d4002a; font-size: 20px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
-    .check { fill: none; stroke: #d4002a; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
-    .footer { fill: #333; font-size: 13px; font-family: Arial, Helvetica, sans-serif; }
+    :root{
+      --akbank-red:#d4002a;
+      --text-dark:#111;
+      --text-muted:#555;
+      --line:#e6e6e6;
+    }
+    .bg{fill:#ffffff;}
+    .title{fill:var(--akbank-red);font-size:20px;font-weight:700;font-family:Arial,Helvetica,sans-serif;}
+    .status{fill:var(--akbank-red);font-size:16px;font-weight:700;font-family:Arial,Helvetica,sans-serif;}
+    .label{fill:var(--text-muted);font-size:12px;font-family:Arial,Helvetica,sans-serif;}
+    .value{fill:var(--text-dark);font-size:14px;font-family:Arial,Helvetica,sans-serif;}
+    .divider{stroke:var(--line);stroke-width:1;}
+    .logo{fill:var(--akbank-red);font-size:18px;font-weight:800;letter-spacing:1px;font-family:Arial Black,Arial,Helvetica,sans-serif;}
+    .foot{fill:#666;font-size:11px;font-family:Arial,Helvetica,sans-serif;}
   </style>
 
-  <!-- Border -->
-  <rect x="10" y="10" rx="12" ry="12" width="860" height="240" class="box"/>
+  <!-- Background -->
+  <rect x="0" y="0" width="360" height="640" class="bg"/>
 
-  <!-- Title -->
-  <text x="30" y="45" class="title">AKBANK – ÖDEME TEYİDİ</text>
+  <!-- Header -->
+  <text x="180" y="45" text-anchor="middle" class="title">
+    Akbank – Ödeme Bilgilendirmesi
+  </text>
 
-  <!-- Status -->
-  <path d="M620 40 L640 60 L680 25" class="check"/>
-  <text x="700" y="50" class="status">TAHSİL EDİLDİ</text>
+  <line x1="20" y1="70" x2="340" y2="70" class="divider"/>
 
-  <!-- Row 1 -->
-  <text x="30" y="95" class="label">Alıcı Kurum</text>
-  <text x="200" y="95" class="value">T.C. HAZİNE VE MALİYE BAKANLIĞI</text>
+  <!-- Content -->
+  <text x="20" y="110" class="label">Alıcı Kurum</text>
+  <text x="20" y="130" class="value">T.C. HAZİNE VE MALİYE BAKANLIĞI</text>
 
-  <!-- Row 2 -->
-  <text x="30" y="125" class="label">Vergi Dairesi</text>
-  <text x="200" y="125" class="value">İnegöl Vergi Dairesi Müdürlüğü</text>
+  <text x="20" y="165" class="label">Vergi Dairesi</text>
+  <text x="20" y="185" class="value">İnegöl Vergi Dairesi Müdürlüğü</text>
 
-  <!-- Row 3 -->
-  <text x="30" y="155" class="label">Ödeme Türü</text>
-  <text x="200" y="155" class="value">İdari Para Cezası (7258 / 5-D)</text>
+  <text x="20" y="220" class="label">Ödeme Türü</text>
+  <text x="20" y="240" class="value">İdari Para Cezası (7258 / 5-D)</text>
 
-  <!-- Row 4 -->
-  <text x="30" y="185" class="label">Borçlu (TCKN)</text>
-  <text x="200" y="185" class="value">10726922920</text>
+  <text x="20" y="275" class="label">Borçlu (TCKN)</text>
+  <text x="20" y="295" class="value">10726922920</text>
 
-  <!-- Right column -->
-  <text x="520" y="95" class="label">Tutar</text>
-  <text x="650" y="95" class="value">320.000,00 TL</text>
+  <text x="20" y="330" class="label">Tutar</text>
+  <text x="20" y="350" class="value">320.000,00 TL</text>
 
-  <text x="520" y="125" class="label">İşlem Tarihi</text>
-  <text x="650" y="125" class="value">11.09.2025</text>
+  <text x="20" y="385" class="label">İşlem Tarihi</text>
+  <text x="20" y="405" class="value">11.09.2025 – 22:55</text>
 
-  <text x="520" y="155" class="label">Kanal</text>
-  <text x="650" y="155" class="value">Akbank Direkt Mobil</text>
-
-  <text x="520" y="185" class="label">Durum</text>
-  <text x="650" y="185" class="value">Ödeme Başarıyla Gerçekleşti</text>
+  <!-- STATUS ARTIK BURADA -->
+  <text x="20" y="440" class="label">İşlem Durumu</text>
+  <text x="20" y="462" class="status">TAHSİL EDİLDİ</text>
 
   <!-- Footer -->
-  <text x="440" y="225" text-anchor="middle" class="footer">
-    Bu bilgilendirme, Akbank sistem kayıtlarına dayanarak oluşturulmuştur.
+  <line x1="20" y1="500" x2="340" y2="500" class="divider"/>
+
+  <text x="20" y="530" class="logo">AKBANK</text>
+  <text x="20" y="550" class="foot">Müşteri İletişim Merkezi: 444 25 25</text>
+  <text x="20" y="568" class="foot">www.akbank.com</text>
+
+  <text x="180" y="610" text-anchor="middle" class="foot">
+    Bu görsel bilgilendirme amaçlıdır.
   </text>
+
 </svg>
